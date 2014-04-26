@@ -6,12 +6,15 @@
   <script type="text/javascript" charset="utf-8" src="cordova-3.3.0.js"></script>
   <script type="text/javascript">
     function onBodyLoad(){
+      console.log('one');
       document.addEventListener("deviceready", PhonegapLoaded, false);
     }
     function PhonegapLoaded(){
+      console.log('two');
       document.getElementById("submitButton").addEventListener("click", dispMessage);
     }
     function dispMessage(){
+      console.log('three');
       var nameOfUser = document.getElementById("name").value;
       document.getElementById("welcomemsg").innerHTML = "Welcome " + nameOfUser + " !";
     }
