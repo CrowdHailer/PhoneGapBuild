@@ -16,5 +16,4 @@
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="false"/>
   <icon src="icon.png"/>
-  <gap:plugin name="org.apache.cordova.device" />
 </widget>
